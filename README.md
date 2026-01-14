@@ -2,9 +2,10 @@
 # Defective Spots on Solar Panels Segmentation Using DeepLabV3+
 
 **Author:** Abdullah Zunorain
+
 **Date:** January 2026
+
 **Project Type:** Semantic Segmentation / Computer Vision
-**License:** MIT License
 
 ---
 
