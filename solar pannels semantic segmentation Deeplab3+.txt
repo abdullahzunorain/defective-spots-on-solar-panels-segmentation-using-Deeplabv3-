@@ -1,0 +1,51 @@
+project: Demage/defective Spots on Solar-Panels segmentation using Deeplab3+ (drone-image dataset of solar panels)
+
+Project Instructions By Client:...
+
+she said nope, deeplabv3+ must with resnet101 backbone is a must also
+
+I want to compare or improve this DeepLabv3+ model using CRF as post-processing. 
+My hypothesis is that using CRF should give better results. 
+The object being studied is DeepLabv3+ for detecting hotspots on solar panels. 
+So basically, I want to see which method is the most effective for hotspot detection using that model.
+
+
+Developing an image-processing pipeline using the DeepLabV3+ architecture with a drone-image dataset of solar panels. 
+The output includes a comparison between DeepLabV3+ with Conditional Random Field (CRF) post-processing and without CRF. 
+The evaluation metrics will include accuracy, precision, recall, and F1-score. 
+The final output also includes visual results showing the detected target points based on the dataset’s ground-truth labels.
+
+"i already have the dataset: with training-subset: 518 with mask_PNG's  and val-subset: 130 with mask_png's for each .jpg image...
+
+“Later, the output should look like that: the ground truth/mask on the left, the Deeplabv3+ result in the middle, and the CRF-refined output on the right.
+There will also be a metrics report comparing the performance of Deeplabv3+ without CRF and with CRF.”
+
+
+its like segmentation...
+The dataset already includes the masks... and there are just two classes 0 bg(by default) and 1 defective class(target-> need to be segmented by model).
+
+
+The masks indicate the location of specific points that the model needs to predict. 
+For example, the green box is the reference area the model must predict or re-create. 
+The red box is the prediction result from Deeplabv3+, 
+and the blue box is the prediction result from Deeplabv3+ with CRF.”
+
+“Basically, it's the visualization of the model’s prediction results compared to the ground truth, along with the metrics. 
+The whole point is just to compare the performance of Deeplabv3+ with and without CRF to see which one performs better.”
+
+"the metrics include precision recall acurracy f1 score miou"
+
+
+---------------------------------------------------------------------------------------------------
+
+
+She definitely wants to use DeepLabv3+ as the main model.
+Then add CRF as post-processing to compare “before vs after”.
+she just wants the results to not look terrible and to show a clear difference between without CRF and with CRF.
+The main goal is to prove that CRF actually has an effect, ideally making the hybrid (DeepLabv3+ + CRF) perform better.
+
+She wants a clean pipeline: DeepLabv3+ baseline → DeepLabv3+ + CRF hybrid, show meaningful improvement, & make sure the results look good enough.
+
+- and at the end do model evaluation in detail(f1 score, miou, recall, precision, both test and training accuracies, ROC, learning curve and losses curve, etc).
+- as the classes are imbalanced in this so do use techniques for imbalanced dataset...
+- also use hyperparameter tuning for CRF ...

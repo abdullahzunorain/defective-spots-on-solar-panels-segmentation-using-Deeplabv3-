@@ -1,0 +1,4 @@
+final/processed_dataset_ver_04/
+*.pth
+*.npy
+# model_training_results/output_seg/*.png

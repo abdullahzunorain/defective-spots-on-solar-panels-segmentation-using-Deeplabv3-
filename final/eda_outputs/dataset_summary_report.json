@@ -1,0 +1,65 @@
+{
+    "dataset_info": {
+        "name": "Solar Cell Segmentation Dataset",
+        "type": "Semantic Segmentation (Image-Mask Pairs)",
+        "total_samples": 324,
+        "train_samples": 259,
+        "val_samples": 65,
+        "train_val_ratio": "3.98:1"
+    },
+    "image_specs": {
+        "dimensions": {
+            "(512, 512)": 324
+        },
+        "modes": {
+            "RGB": 324
+        },
+        "formats": {
+            "JPEG": 324
+        },
+        "avg_size_kb": 54.55,
+        "total_size_mb": 17.26
+    },
+    "mask_specs": {
+        "dimensions": {
+            "(512, 512)": 324
+        },
+        "modes": {
+            "RGB": 273,
+            "L": 51
+        },
+        "avg_size_kb": 3.45,
+        "total_size_mb": 1.09
+    },
+    "segmentation_stats": {
+        "num_classes": 2,
+        "class_values": [
+            0,
+            1
+        ],
+        "avg_background_ratio": "92.25%",
+        "class_distribution": {
+            "0": 100,
+            "1": 100
+        }
+    },
+    "quality_metrics": {
+        "avg_brightness": 101.66,
+        "avg_contrast": 50.86,
+        "avg_sharpness": 328.73,
+        "avg_noise": 119.19
+    },
+    "pixel_statistics": {
+        "rgb_means": {
+            "red": 99.71,
+            "green": 93.12,
+            "blue": 108.79
+        },
+        "rgb_stds": {
+            "red": 52.88,
+            "green": 51.93,
+            "blue": 56.03
+        },
+        "avg_mask_coverage": "6.93%"
+    }
+}
